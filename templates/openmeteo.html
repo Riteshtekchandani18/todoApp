@@ -25,7 +25,11 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 600px;
+           
+            
+        }
+        .tshadow{
+            text-shadow: 3px 2px 3px  #222;
         }
     </style>
 
@@ -72,10 +76,10 @@
                                 <button class="dropdown-item" href="#">
                                     <i class="fa fa-sun"></i> Light
                                 </button>
-                                <button class="dropdown-item disabled" href="#">
+                                <button class="dropdown-item " href="#">
                                     <i class="fa fa-moon"></i> Dark
                                 </button>
-                                <button class="dropdown-item disabled" href="#">
+                                <button class="dropdown-item " href="#">
                                     <i class="fa fa-adjust"></i> Auto
                                 </button>
                             </div>
@@ -87,28 +91,79 @@
 
     </header>
     <main>
-        <div class="container-fluid hero">
+        <div class="container-fluid hero text-center text-white p-5 mb-5">
+            <div class="row m-4">
+                <div class="col-12   ">
+                    <i class="fa fa-cloud-sun fa-5x mb-2 tshadow"></i>
+                    <div class="display-5 mb-2">
+                        Free Weather API
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto mb-2">
+                    <p class="lead">
+                        Open-Meteo is an open-source weather API and offers free access for non-commercial use. No API key required. Start using it now!
+                    </p>
+                   <div class="d-flex gap-4 justify-content-center">
+                    <a name="" id="" class="btn btn-primary btn-lg px-4" href="#" role="button">Features</a>
+                    <a name="" id="" class="btn btn-outline-light btn-lg px-4" href="#" role="button">Documentaion</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5 ">
             <div class="row">
-                <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolore ab
-                    asperiores! Illo fuga, quae iusto aliquid beatae iure modi, possimus explicabo accusamus cumque
-                    optio cum animi perspiciatis labore liro!</div>
+                <div class="col-lg-6 ">
+                    <h1 class="display-5">
+                        Accurate Weather Forecasts for Any Location
+                    </h1>
+                    <p class="lead">
+                        Open-Meteo partners with national weather services to bring you open data with high resolution, ranging from 1 to 11 kilometers. Our powerful APIs intelligently select the most suitable weather models for your specific location, ensuring accurate and reliable forecasts.
+                    </p>
+                    <p>
+                        With our user-friendly JSON API, accessing weather data has never been easier. Whether you're developing an application or seeking weather information for personal use, our APIs provide seamless integration and deliver the data you need in a simple and accessible format.
+                    </p>
+                    <p>
+                        Experience the precision and convenience of Open-Meteo's Forecast API, providing comprehensive weather information worldwide. Stay informed and make informed decisions with our reliable weather forecasts.
+                    </p>
+                    <div class="d-flex gap-4 ">
+                        <a name="" id="" class="btn btn-primary btn-lg px-4" href="#" role="button">See Features</a>
+                        <a name="" id="" class="btn btn-outline-secondary btn-lg px-4" href="#" role="button">Read the docs</a>
+                    </div>
+                </div>
+                       <div class="col-lg-6 bg-dark rounded-3 text-white p-3 ">
+                         <!-- Nav tabs -->
+                         <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
+                           <li class="nav-item" role="presentation">
+                             <button class="btn btn-outline-light active me-1 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Forecast & current </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                             <button class="btn btn-outline-light me-1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"> Last 10 days </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                             <button class="btn btn-outline-light" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false"> Historical data </button>
+                           </li>
+                         </ul>
+                         
+                         <!-- Tab panes -->
+                         <div class="tab-content">
+                           <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> home </div>
+                           <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"> profile </div>
+                           <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"> messages </div>
+                         </div>
+                       </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure suscipit odit
-                    laboriosam deserunt harum quis dicta ex, veritatis est at, soluta excepturi labore quae, obcaecati
-                    omnis non inventore mollitia necessitatibus.</div>
-                <div class="col-lg-6">Officia adipisci voluptatibus corrupti excepturi doloribus eum porro, dolorum at.
-                    Praesentium, nobis assumenda! Perspiciatis nemo voluptatibus, enim eum suscipit facere
-                    necessitatibus nesciunt aut iusto, hic odit minima nisi, perferendis optio?</div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="tittle-area d-flex align-items-center">
+                        <i class="fa fa-sun fa-3x bg-primary rounded-3 p-2 text-white me-2"></i>
+                    <h2>
+                        High Resolution
+                    </h2>
+             
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xxl-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-                    odio, rem ut consectetur atque quae. Maxime, cumque? Quam repellat dignissimos nam nihil.
-                    Consequuntur veniam officia harum ab quibusdam, excepturi enim.</div>
                 <div class="col-lg-6 col-xxl-4">Autem repellat nulla officia, pariatur officiis tempora, voluptatum
                     rerum ipsum culpa doloremque, cumque quasi fugiat temporibus natus in. Perferendis architecto unde
                     in aperiam libero. Suscipit nobis exercitationem illo blanditiis placeat.</div>

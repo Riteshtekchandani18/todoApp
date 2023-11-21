@@ -1,25 +1,29 @@
-<div id="todo-list">
+<div id="todo-list" class="pt-5">
     <form class="d-flex">
         <div class="col">
             <div class="mb-3">
                 <label for="task" class="form-label">Add a task</label>
-                <input type="text" name="task" id="task" class="form-control form-control-lg" placeholder="Bring ">  
+                <input type="text" name="task" id="task" class="form-control form-control-lg" placeholder="Bring ">
             </div>
         </div>
     </form>
     <div class="col">
-        
+
         {% for item in task %}
+        <div class="d-flex justify-content-in-between">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="{{itrm.title}}" value={{item.id}}>
-            <label class="form-check-label" for="{{item.title}}">{{item.title}}t</label>
-          </div>
+            <input class="form-check-input" type="checkbox" id="{{item.title}}" value={{item.id}}>
+            <label class="form-check-label" for="{{item.title}}">{{item.title}}</label>
+        </div>
+        <button type="button" class="btn btn-outline-danger"> <i class="fa fa-trash"></i></button>
+       <hr>
+     </div>
         {% empty %}
         <div class="alert alert-warning" role="alert">
-           Please enter a task !
-          </div>
+            Please enter a task !
+        </div>
         {% endfor %}
-            
-       
+
+
     </div>
 </div>
